@@ -1,0 +1,3166 @@
+body .close-search-overlay {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 0;
+}
+.ui-draggable-dragging {
+  width: inherit!important;
+  border-radius: 21px;
+  border: 2px solid #e2e3e3;
+  opacity: .6;
+}
+.ui-draggable-dragging .plus {
+  display: none!important;
+}
+.drag {
+  border: 2px dashed #cdcdcd!important;
+  border-radius: 11px;
+  padding: 5px 30px;
+}
+.drop-name {
+  transition: all .4s ease;
+  -webkit-transition: all .4s ease;
+}
+.girls {
+  color: #e8298c;
+}
+.boys {
+  color: #1e8cd8;
+}
+.unisex {
+  color: #00b830;
+}
+.stage .contenido {
+  padding: 0;
+}
+.stage .contenido .red-bar {
+  margin-top: 0;
+}
+.sidebar {
+  padding-left: 3%;
+}
+.main-search {
+  display: inline-block;
+  width: 37%;
+  text-align: center;
+  font-size: 22px;
+  line-height: 26px;
+  width: 100%;
+  color: #333740;
+}
+.main-search p {
+  font-family: 'omnes_huggieslight';
+}
+.seeMore {
+  text-align: center;
+  opacity: 1;
+  -webkit-transition: opacity 0.4s ease;
+  -moz-transition: opacity 0.4s ease;
+  -ms-transition: opacity 0.4s ease;
+  -o-transition: opacity 0.4s ease;
+}
+.seeMore.loading .btn {
+  display: none;
+}
+.seeMore.loading:after {
+  content: "";
+  display: block;
+  background: url(../../content/images/tools/babyNames/preloader.gif) no-repeat top left;
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+}
+.seeMore.no-results {
+  opacity: 0;
+}
+.seeMore a:after {
+  content: '>';
+  background: url(../../content/images/sprites/sprite.png) no-repeat top left;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  float: right;
+  text-indent: -9000px;
+  position: absolute;
+  top: 8px;
+  right: 10px;
+}
+.search-text .search-button {
+  margin-top: 20px;
+  position: relative;
+}
+.search-text .search-button .autocompleteSearch {
+  width: 100%;
+  position: absolute;
+  top: 52px;
+  background: #efefef;
+  z-index: 1;
+  padding: 0 5% 5%;
+  opacity: 0;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+  -moz-box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.15);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='@color')";
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='@color');
+}
+.search-text .search-button .autocompleteSearch.open {
+  opacity: 1;
+  -webkit-transition: opacity 0.5s ease;
+  -moz-transition: opacity 0.5s ease;
+  -ms-transition: opacity 0.5s ease;
+  -o-transition: opacity 0.5s ease;
+  z-index: 2;
+}
+.search-text .search-button .autocompleteSearch ul li {
+  width: 100%;
+  text-align: left;
+  padding-left: 1%;
+  width: 90%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  /* required for Opera */
+  -ms-text-overflow: ellipsis;
+  /* required for IE8, allegedly */
+}
+.search-text .search-button .autocompleteSearch ul li a {
+  display: block;
+  font-size: 17px;
+  padding: 3px 0;
+}
+.search-text .search-button .autocompleteSearch ul li.boys a {
+  color: #1e8cd8;
+}
+.search-text .search-button .autocompleteSearch ul li.girls a {
+  color: #e8298c;
+}
+.search-text .search-button .autocompleteSearch:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -18px;
+  right: 0;
+  width: 12px;
+  height: 36px;
+  background: #efefef;
+}
+.search-text .search-button .autocompleteSearch:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -18px;
+  left: 0;
+  width: 12px;
+  height: 36px;
+  background: #efefef;
+}
+.search-text .search-button input[type="submit"] {
+  z-index: 3;
+}
+.listContainer-data {
+  width: 90%;
+  -moz-box-shadow: 2px 2px 18px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 2px 2px 18px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 18px rgba(0, 0, 0, 0.1);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='@color')";
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='@color');
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+  margin-top: 35px;
+  overflow: hidden;
+}
+.listContainer-data .list ul:not(.seeAll) li {
+  -webkit-transition: padding .5s ease, height .5s ease;
+  -moz-transition: padding .5s ease, height .5s ease;
+  -ms-transition: padding .5s ease, height .5s ease;
+  -o-transition: padding .5s ease, height .5s ease;
+  width: 100%;
+  display: block;
+  font-size: 18px;
+  font-family: "omnes_huggieslight";
+  padding: 15px 40px;
+  position: relative;
+  text-align: left;
+  background: white;
+}
+.listContainer-data .list ul:not(.seeAll) li.head {
+  background: #cd2e28;
+}
+.listContainer-data .list ul:not(.seeAll) li.head.boys {
+  background: #1e8cd8;
+}
+.listContainer-data .list ul:not(.seeAll) li.head.girls {
+  background: #e8298c;
+}
+.listContainer-data .list ul:not(.seeAll) li.head .dropdown {
+  position: relative;
+}
+.listContainer-data .list ul:not(.seeAll) li.head .dropdown .options {
+  position: absolute;
+  z-index: 3;
+  border: 1px solid #BABABA;
+  margin: 0;
+  padding: 0;
+  top: 32px;
+  left: -6%;
+  width: 150px;
+  display: none;
+  -moz-box-shadow: 4px 4px 19px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 4px 4px 19px rgba(0, 0, 0, 0.25);
+  box-shadow: 4px 4px 19px rgba(0, 0, 0, 0.25);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='@color')";
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='@color');
+}
+.listContainer-data .list ul:not(.seeAll) li.head .dropdown .options li {
+  color: #333740;
+  cursor: pointer;
+  padding: 5px 20px;
+  text-align: center;
+  -webkit-transition: 0.5s ease all;
+  -moz-transition: 0.5s ease all;
+  -ms-transition: 0.5s ease all;
+  -o-transition: 0.5s ease all;
+}
+.listContainer-data .list ul:not(.seeAll) li.head .dropdown .options li:hover {
+  background: #333740 !important;
+  color: white;
+}
+.listContainer-data .list ul:not(.seeAll) li.head .dropdown .options.hide {
+  display: none;
+}
+.listContainer-data .list ul:not(.seeAll) li.head .dropdown .options::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 9px 9.5px 9px;
+  border-color: transparent transparent #BABABA transparent;
+  -webkit-transform: rotate(360deg);
+  position: absolute;
+  right: 5px;
+  top: -10px;
+}
+.listContainer-data .list ul:not(.seeAll) li.head .dropdown .options::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 8px 8.5px 7.5px;
+  border-color: transparent transparent white transparent;
+  -webkit-transform: rotate(360deg);
+  position: absolute;
+  right: 6px;
+  top: -8px;
+  z-index: 1;
+}
+.listContainer-data .list ul:not(.seeAll) li.head p {
+  font-family: 'omnes_huggiessemibold';
+  color: white;
+}
+.listContainer-data .list ul:not(.seeAll) li.head p.down-arrow:first-of-type:after {
+  content: '>';
+  background: url(../../content/images/sprites/sprite.png) no-repeat top left;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  text-indent: -9000px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.listContainer-data .list ul:not(.seeAll) li > a {
+  right: 25px;
+  display: block;
+  height: 34px;
+  background: url(../../content/images/tools/babyNames/add_icn.png) no-repeat top left;
+  float: left;
+  width: 37px;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translate(0, -50%);
+  /* IE 9 */
+  -webkit-transform: translate(0, -50%);
+  /* IE 9 */
+  transform: translate(0, -50%);
+  /* IE 9 */
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.listContainer-data .list ul:not(.seeAll) li > a.trophy {
+  background: url(../../content/images/tools/babyNames/icons_sprite.png) no-repeat top left;
+  right: 80px;
+}
+.listContainer-data .list ul:not(.seeAll) li > a.delete {
+  background: url(../../content/images/tools/babyNames/icons_sprite.png) no-repeat top right;
+}
+.listContainer-data .list ul:not(.seeAll) li > a.plus {
+  font-size: 50px;
+  color: #0096ff!important;
+  text-indent: inherit;
+  background: none;
+  overflow: inherit;
+  height: inherit;
+}
+.listContainer-data .list ul:not(.seeAll) li > a.fav {
+  background: url(../../content/images/tools/babyNames/added_icn.png) no-repeat top left;
+  pointer-events: none;
+}
+.listContainer-data .list ul:not(.seeAll) li p {
+  margin: 0;
+  float: left;
+  width: 50%;
+  text-align: left;
+}
+.listContainer-data .list ul:not(.seeAll) li p:nth-child(2) {
+  width: 46%;
+}
+.listContainer-data .list ul:not(.seeAll) li p:nth-child(2) a {
+  color: #333740;
+}
+.listContainer-data .list ul:not(.seeAll) li p:nth-child(2) a:hover {
+  text-decoration: underline;
+}
+.listContainer-data .list ul:not(.seeAll) li p a:hover {
+  text-decoration: underline;
+}
+.listContainer-data .list ul:not(.seeAll) li:nth-child(even) {
+  background: #f7f7f7!important;
+}
+.listContainer-data .list ul:not(.seeAll) li.girls {
+  color: #e8298c;
+}
+.listContainer-data .list ul:not(.seeAll) li.girls a {
+  color: #e8298c;
+}
+.listContainer-data .list ul:not(.seeAll) li.boys {
+  color: #1e8cd8;
+}
+.listContainer-data .list ul:not(.seeAll) li.boys a {
+  color: #1e8cd8;
+}
+.listContainer-data .list ul:not(.seeAll) li.unisex {
+  color: #00b830;
+}
+.listContainer-data .list ul:not(.seeAll) li.unisex a {
+  color: #00b830;
+}
+.listContainer-data .list ul:not(.seeAll) li.draggable {
+  cursor: move;
+}
+.listContainer-data .list ul:not(.seeAll) li .delete-alert,
+.listContainer-data .list ul:not(.seeAll) li .add-alert {
+  display: none;
+  position: absolute;
+  width: 100%;
+  background: white;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  line-height: 55px;
+  color: #333740;
+  font-size: 14px;
+}
+.listContainer-data .list ul:not(.seeAll) li .delete-alert a,
+.listContainer-data .list ul:not(.seeAll) li .add-alert a {
+  font-size: 13px;
+  background: #cd2e28;
+  color: white;
+  padding: 2px 13px;
+  margin: 0 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+.listContainer-data .list ul:not(.seeAll) li .delete-alert .choice-wrap,
+.listContainer-data .list ul:not(.seeAll) li .add-alert .choice-wrap {
+  display: inline-block;
+}
+.listContainer-data .list ul:not(.seeAll) li.close {
+  height: 0!important;
+  padding: 0!important;
+  overflow: hidden;
+}
+.listContainer-data .list .seeAll li {
+  text-align: center;
+  height: 90px;
+  line-height: 90px;
+  width: 100%;
+}
+.listContainer-data .list .seeAll li a {
+  displayt: block;
+  width: 100%;
+  color: #cd2e28;
+  font-family: "omnes_huggiessemibold";
+}
+.search-text .fields-search {
+  text-align: center;
+}
+.search-text .fields-search .radio-container input[type=checkbox]:not(old) ~ label,
+.search-text .fields-search .radio-container input[type=radio]:not(old) ~ label {
+  line-height: 19px;
+  font: 16px omnes_huggiesregular;
+}
+.search-text .fields-search .radio-container input[type=radio]:not(old) ~ label > span {
+  background: #cd2e28;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  margin-right: 4px;
+}
+.search-text .fields-search .radio-container input[type=radio]:not(old):checked ~ label > span {
+  background: #cd2e28;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  margin-right: 4px;
+}
+.search-text .fields-search .radio-container input[type=radio]:not(old):checked ~ label > span:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: white;
+  text-align: center;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 23%;
+  -moz-box-shadow: 0 1px 1px black;
+  -webkit-box-shadow: 0 1px 1px black;
+  box-shadow: 0 1px 1px black;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='@color')";
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='@color');
+}
+.search-text .search_btn {
+  display: inline-block;
+  width: 100%;
+}
+.search-text .search_btn a {
+  display: inline-block;
+  width: 100%;
+  max-width: 387px;
+  height: 58px;
+  text-indent: -9000px;
+  background: url(../../content/images/tools/babyNames/search_btn.png) no-repeat top left;
+  background-size: 100%;
+  margin: 20px 0;
+}
+.search-text strong {
+  display: inline-block;
+  font-family: 'omnes_huggiesmedium';
+  width: 100%;
+  margin: 35px 0 15px;
+}
+.search-text .fields-search .radio-container {
+  float: left;
+  display: inline-block;
+  width: 33%;
+  font-size: 18px;
+}
+.search-text .fields-search .search-button {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+.search-text .fields-search .search-button input[type=text] {
+  background: #efefef;
+  display: inline-block;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  color: #5e5e5e;
+  padding-right: 70px;
+  z-index: 2;
+}
+.search-text .fields-search .search-button input[type=submit] {
+  display: inline-block;
+  float: right;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  right: 7px;
+  top: 6px;
+  width: 47px;
+  height: 47px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  border-radius: 30px;
+  background: url(../../content/images/tools/babyNames/search_icn.png) no-repeat top left;
+}
+.listLink {
+  display: inline-block;
+  width: 100%;
+  margin: 30px 0;
+  text-align: center;
+}
+.listLink a {
+  font-size: 24px;
+  font-family: "omnes_huggiesmedium";
+  display: inline-block;
+  background: url(../../content/images/tools/babyNames/list_icn_small.png) no-repeat top left;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 55px;
+  color: #333740;
+}
+.listLink a span {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  border-radius: 25px;
+  background: #e2e2e2;
+  text-align: center;
+  line-height: 50px;
+}
+.compartir .fb_icn {
+  background: url(../../content/images/tools/babyNames/facebook.png) no-repeat top left;
+  display: inline-block;
+  width: 46px;
+  height: 46px;
+  position: relative;
+  top: 16px;
+}
+.compartir .wp_icn {
+  background: url(../../content/images/tools/babyNames/whatsapp.png) no-repeat top left;
+  background-size: 100%;
+  display: none;
+  width: 46px;
+  height: 46px;
+  position: relative;
+  top: 16px;
+}
+/*Vote form and checkbox styles*/
+.voteForm {
+  /*skin input fields*/
+}
+.voteForm .checkbox-container {
+  float: left;
+  display: inline-block;
+  width: auto;
+  font-size: 18px;
+  clear: none;
+  position: initial;
+}
+.voteForm .checkbox-container input[type=checkbox]:not(old) {
+  cursor: pointer;
+  float: left;
+  font-size: 1em;
+  height: 36px;
+  margin: 0;
+  opacity: 0;
+  padding: 0;
+  width: 34px;
+}
+.voteForm .checkbox-container input[type=checkbox]:not(old) ~ label {
+  display: inline-block;
+  margin-left: -2.3em;
+}
+.voteForm .checkbox-container input[type=checkbox]:not(old) ~ label > span {
+  background:#fff;
+  border:1px dotted #666;
+  cursor: pointer;
+  display: inline-block;
+  float: left;
+  height: 36px;
+  margin-right: 7px;
+  vertical-align: bottom;
+  width: 38px;
+}
+.voteForm .checkbox-container input[type=checkbox]:not(old):checked ~ label > span {
+  background: red;
+}
+.voteForm .checkbox-container input[type=checkbox]:not(old) label.error {
+  left: 0;
+}
+.voteForm .checkbox-container input[type=checkbox]:not(old).error ~ label {
+  background-color: transparent;
+  border-radius: 0;
+  border: none;
+  line-height: auto;
+  width: auto;
+}
+.voteForm .listContainer-data .list ul:not(.seeAll) li {
+  position: initial;
+  height: 30px;
+}
+.voteForm .messageErrorList label {
+  width: 100%;
+  color: #cd2e28;
+  text-align: center;
+  margin-top: 30px;
+  display: none;
+}
+.voteForm .listContainer-data .list ul:not(.seeAll) li p:nth-child(2) {
+  width: 37%;
+}
+.list ul {
+  padding: 0;
+}
+.messageErrorList {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin: 25px 0 0 0;
+}
+@media screen and (max-width: 768px) {
+  .listLink {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 10;
+    left: 0;
+    background: #f0f0f0;
+    height: 100px;
+    border-top: 1px dashed #c8c8c8;
+    margin: 0px!important;
+  }
+  .listLink .searchBtn {
+    background-color: white;
+    display: block;
+    padding: 11px;
+    width: 20%;
+    position: absolute;
+    left: 3%;
+    top: 13px;
+    height: 74px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    border-radius: 15px;
+    font-family: "omnes_huggiesmedium";
+    -moz-box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.15);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='@color')";
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='@color');
+  }
+  .listLink .searchBtn:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px 9px 6px 0;
+    border-color: transparent #ffffff transparent transparent;
+    position: absolute;
+    top: 50%;
+    left: -9px;
+    margin-top: -6px;
+  }
+  .listLink .searchBtn span {
+    background-color: white;
+    display: block;
+    padding: 11px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    border-radius: 15px;
+    margin: -24px 0 0 -24px;
+    padding: 0;
+    width: 47px;
+    height: 47px;
+    background: url(../../content/images/tools/babyNames/search_icn.png) no-repeat top left;
+    z-index: 100;
+  }
+  .listLink > a {
+    position: absolute;
+    top: 50%;
+    -ms-transform: translate(0, -50%);
+    /* IE 9 */
+    -webkit-transform: translate(0, -50%);
+    /* IE 9 */
+    transform: translate(0, -50%);
+    /* IE 9 */
+    right: 0;
+    margin: 0 auto;
+    background: none!important;
+    width: 73%;
+    padding: 0;
+  }
+  .listLink > a span {
+    position: fixed;
+    top: -33px;
+    right: 4%;
+    color: white;
+    background-color: #cd2e28 !important;
+    font-family: "omnes_huggieslight";
+    font-size: 20px;
+    width: 35px!important;
+    height: 35px!important;
+    line-height: 35px!important;
+  }
+  .listLink > a .mobileWrap {
+    background-color: white;
+    display: block;
+    padding: 11px;
+    width: 100%;
+    position: absolute;
+    right: 3%;
+    top: -11px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    border-radius: 15px;
+    font-family: "omnes_huggiesmedium";
+    -moz-box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.15);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='@color')";
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='@color');
+  }
+  .listLink > a .mobileWrap .mobileIcn {
+    font-size: 24px;
+    font-family: "omnes_huggiesmedium";
+    display: inline-block;
+    background: url(../../content/images/tools/babyNames/list_icn_small.png) no-repeat top left;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    padding-left: 55px;
+    color: #333740;
+    float: left;
+    padding: 5px 0;
+  }
+  .listLink > a .mobileWrap:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 8.5px 0 8.5px 9px;
+    border-color: transparent transparent transparent white;
+    position: absolute;
+    right: -7px;
+    top: 30px;
+  }
+  .listLink > a .mobileWrap::before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 8px 8px 8px 0;
+    border-color: transparent transparent transparent white;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translate(0, -50%);
+    /* IE 9 */
+    -webkit-transform: translate(0, -50%);
+    /* IE 9 */
+    transform: translate(0, -50%);
+    /* IE 9 */
+    left: -9px;
+  }
+  .listLink .searchIcn {
+    display: inline-block;
+    float: right;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    right: 7px;
+    top: 6px;
+    width: 47px;
+    height: 47px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    border-radius: 30px;
+    background: url(../../content/images/tools/babyNames/search_icn.png) no-repeat top left;
+  }
+  .sidebar {
+    padding-left: 0!important;
+    padding-bottom: 71px!important;
+  }
+  .sidebar .separator {
+    display: none;
+  }
+  .search-text {
+    position: fixed;
+    top: -221px;
+    left: 0;
+    width: 100%;
+    padding: 0 2%;
+    z-index: 10;
+    background-color: white;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    -webkit-transition: top 0.2s ease;
+    -moz-transition: top 0.2s ease;
+    -ms-transition: top 0.2s ease;
+    -o-transition: top 0.2s ease;
+  }
+  .search-text.open {
+    top: 0;
+  }
+  .search-text strong {
+    displayt: none;
+  }
+  .search-text form label {
+    font-size: 15px;
+  }
+  .listContainer-data .list ul:not(.seeAll) li.head .dropdown .options {
+    width: 42%;
+    max-width: 124px;
+  }
+  .listContainer-data .list ul:not(.seeAll) li .delete-alert,
+  .listContainer-data .list ul:not(.seeAll) li .add-alert {
+    line-height: inherit;
+    padding: 5%;
+  }
+  .listContainer-data .list ul:not(.seeAll) li .delete-alert .choice-wrap,
+  .listContainer-data .list ul:not(.seeAll) li .add-alert .choice-wrap {
+    display: block;
+  }
+  .listContainer-data .list ul:not(.seeAll) li:not(.head) {
+    min-height: 75px;
+    padding: 22px 23px;
+  }
+  .voteForm .checkbox-container label#voteList-error {
+    width: 96%;
+    bottom: 86px;
+    margin: 0 2%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .stage .m-scene .tool-header .container {
+    background: #f1f1f1;
+  }
+  .stage .m-scene .tool-header .container .breadcrumb {
+    margin: 5px 0;
+  }
+  .listContainer-data .list ul:not(.seeAll) li {
+    padding: 15px 23px;
+  }
+  .listContainer-data .list ul:not(.seeAll) li > a:not(.add):not(.plus) {
+    background-size: 73px!important;
+    height: 25px;
+    width: 25px;
+  }
+  .listContainer-data .list ul:not(.seeAll) li > a:not(.add):not(.plus).delete {
+    right: 9px;
+  }
+  .listContainer-data .list ul:not(.seeAll) li > a:not(.add):not(.plus).trophy {
+    right: 53px;
+  }
+  .listContainer-data .list ul:not(.seeAll) li > a:not(.add):not(.plus) .add {
+    background-size: 80%;
+  }
+  .listContainer-data .list ul:not(.seeAll) li p {
+    width: 38%;
+    margin-right: 4px;
+  }
+  .listContainer-data .list ul:not(.seeAll) li p:nth-child(2) {
+    width: 36%;
+  }
+  .listContainer-data .list ul:not(.seeAll) li .delete-alert,
+  .listContainer-data .list ul:not(.seeAll) li .add-alert {
+    line-height: inherit;
+    padding: 2% 5%;
+  }
+  .listContainer-data .list ul:not(.seeAll) li:not(.head) {
+    min-height: 78px;
+    padding: 25px 23px;
+  }
+  .listContainer-data.fav-names {
+    margin-bottom: 31px;
+  }
+  .listLink a {
+    color: inherit;
+    font-size: 18px!important;
+  }
+  .compartir .wp_icn {
+    display: inline-block;
+  }
+}
+.stage.babyNames {
+  background: #fff;
+  color: #333740;
+}
+.stage.babyNames .main-search {
+  width: 37%!important;
+}
+.stage.babyNames .babyNamesTitle {
+  background: #cd2e28;
+  margin-top: 40px;
+  padding: 25px 0;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 50px;
+  font-family: "omnes_huggiesmedium";
+  font-size: 36px;
+}
+.stage.babyNames .nameSearch {
+  display: inline-block;
+  padding-bottom: 45px;
+  border-bottom: 1px dashed #e1e1e1;
+}
+.stage.babyNames .nameSearch .searchImg {
+  display: inline-block;
+  width: 60%;
+  margin-right: 3%;
+  float: left;
+}
+.stage.babyNames .listNameLogin {
+  display: inline-block;
+  width: 90%;
+  margin: 30px 5%;
+  background: url(../../content/images/tools/babyNames/baby_bg.jpg) repeat top left #f0f0f0;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  border-radius: 15px;
+  padding: 30px 65px 30px 194px;
+  position: relative;
+}
+.stage.babyNames .listNameLogin:before {
+  content: ' ';
+  position: absolute;
+  display: inline-block;
+  top: 35px;
+  left: 65px;
+  width: 90px;
+  height: 90px;
+  background: url(../../content/images/tools/babyNames/list_icn_big.png) no-repeat top left;
+}
+.stage.babyNames .listNameLogin h3 {
+  font-size: 34px;
+  font-family: "omnes_huggiesmedium";
+  margin-bottom: 5px;
+}
+.stage.babyNames .listNameLogin p {
+  font-family: "omnes_huggieslight";
+  font-size: 20px;
+}
+.stage.babyNames .listNameLogin p a {
+  color: #cd2e28;
+  font-family: "omnes_huggiessemibold";
+  text-decoration: underline;
+}
+.stage.babyNames .listLink {
+  display: inline-block;
+  width: 100%;
+  margin: 30px 0;
+  text-align: center;
+}
+.stage.babyNames .listLink a {
+  font-size: 26px;
+  font-family: "omnes_huggiesmedium";
+  display: inline-block;
+  background: url(../../content/images/tools/babyNames/list_icn_small.png) no-repeat top left;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 60px;
+  color: #333740;
+}
+.stage.babyNames .listLink a span {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  border-radius: 25px;
+  background: #e2e2e2;
+  text-align: center;
+  line-height: 50px;
+}
+.stage.babyNames .popularNames {
+  display: inline-block;
+  width: 50%;
+  padding: 0;
+  margin: 30px 0 100px;
+  float: left;
+}
+.stage.babyNames .popularNames .double-row {
+  background: #cd2e28;
+  height: 50px;
+  line-height: 50px;
+  margin-bottom: 22px;
+}
+.stage.babyNames .popularNames .double-row .pointedTitle {
+  width: 50%;
+  min-width: 470px;
+  float: right;
+  border-right: 1px solid #fff;
+}
+.stage.babyNames .popularNames .listContainer {
+  width: 85%;
+  min-width: 400px;
+  float: right;
+  padding: 0 4%;
+  border-right: 1px dashed #e1e1e1;
+}
+.stage.babyNames .popularNames .listContainer .list {
+  display: inline-block;
+  width: 48%;
+  margin: 80px 1%;
+  position: relative;
+}
+.stage.babyNames .popularNames .listContainer .list + .list {
+  margin: 0;
+}
+.stage.babyNames .popularNames .listContainer .list ul {
+  padding: 60px 0 0;
+  -moz-box-shadow: 2px 0px 16px #efefef;
+  -webkit-box-shadow: 2px 0px 16px #efefef;
+  box-shadow: 2px 0px 16px #efefef;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='@color')";
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='@color');
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  background: #fff;
+  display: inline-block;
+}
+.stage.babyNames .popularNames .listContainer .list ul:before {
+  content: '';
+  position: absolute;
+  width: 95px;
+  height: 95px;
+  top: -45px;
+  left: 50%;
+  margin-left: -45px;
+}
+.stage.babyNames .popularNames .listContainer .list ul.girls {
+  color: #e8298c !important;
+}
+.stage.babyNames .popularNames .listContainer .list ul.girls:before {
+  background: url(../../content/images/tools/babyNames/girls_icn.png) no-repeat top left;
+  pointer-events: :none;
+}
+.stage.babyNames .popularNames .listContainer .list ul.girls li a {
+  color: #e8298c !important;
+}
+.stage.babyNames .popularNames .listContainer .list ul.girls li a.fav {
+  background: url(../../content/images/tools/babyNames/added_icn.png) no-repeat top left;
+  pointer-events: none;
+}
+.stage.babyNames .popularNames .listContainer .list ul.boys {
+  color: #1e8cd8 !important;
+}
+.stage.babyNames .popularNames .listContainer .list ul.boys:before {
+  background: url(../../content/images/tools/babyNames/boys_icn.png) no-repeat top left;
+  pointer-events: :none;
+}
+.stage.babyNames .popularNames .listContainer .list ul.boys li a {
+  color: #1e8cd8 !important;
+}
+.stage.babyNames .popularNames .listContainer .list ul.boys li a.fav {
+  background: url(../../content/images/tools/babyNames/added_icn.png) no-repeat top left;
+  pointer-events: none;
+}
+.stage.babyNames .popularNames .listContainer .list ul li {
+  display: inline-block;
+  width: 100%;
+  padding: 0 20px;
+  height: 50px;
+  line-height: 50px;
+}
+.stage.babyNames .popularNames .listContainer .list ul li:nth-child(even) {
+  background: #f7f7f7;
+}
+.stage.babyNames .popularNames .listContainer .list ul li p {
+  display: inline-block;
+  width: auto;
+  margin: 0;
+  max-width: 70%;
+}
+.stage.babyNames .popularNames .listContainer .list ul li p a:hover {
+  text-decoration: underline;
+}
+.stage.babyNames .popularNames .listContainer .list ul li > a {
+  display: inline-block;
+  float: right;
+  width: 36px;
+  height: 34px;
+  margin: 8px 0;
+  text-indent: -9000px;
+  background: url(../../content/images/tools/babyNames/add_icn.png) no-repeat top left;
+}
+.stage.babyNames .popularNames .listContainer .list .redText {
+  font-size: 20px;
+  font-family: "omnes_huggiessemibold";
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+}
+.stage.babyNames .topicNames {
+  display: inline-block;
+  width: 50%;
+  padding: 0;
+  margin: 30px 0 100px;
+}
+.stage.babyNames .topicNames .double-row {
+  background: #cd2e28;
+  height: 50px;
+  line-height: 50px;
+  margin-bottom: 22px;
+}
+.stage.babyNames .topicNames .double-row .pointedTitle {
+  width: 50%;
+  min-width: 470px;
+  float: left;
+}
+.stage.babyNames .topicNames .listContainer {
+  width: 75%;
+  min-width: 400px;
+  float: left;
+  padding: 0 4%;
+}
+.stage.babyNames .topicNames .listContainer .list {
+  display: inline-block;
+  width: 100%;
+  margin: 0 5%;
+  position: relative;
+  padding-top: 40px;
+}
+.stage.babyNames .topicNames .listContainer .list div {
+  display: inline-block;
+  width: 50%;
+  padding: 0;
+  height: auto;
+  text-align: center;
+  float: left;
+  min-height: 190px;
+}
+.stage.babyNames .topicNames .listContainer .list div a {
+  display: inline-block;
+  width: 70%;
+  height: auto;
+  margin: 0;
+  padding: 4px;
+  background: #fff;
+  -moz-box-shadow: 5px 5px 15px #efefef;
+  -webkit-box-shadow: 5px 5px 15px #efefef;
+  box-shadow: 5px 5px 15px #efefef;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='@color')";
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='@color');
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+}
+.stage.babyNames .topicNames .listContainer .list div p {
+  font-size: 22px;
+  font-family: "omnes_huggiesmedium";
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+}
+.stage.babyNames .topicNames .listContainer .redText {
+  font-size: 20px;
+  font-family: "omnes_huggiessemibold";
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin-top: 8px;
+}
+.stage.babyNames .pointedTitle {
+  font-size: 24px;
+  font-family: "omnes_huggieslight";
+  color: #fff;
+  background: #cd2e28;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  margin-bottom: 22px;
+}
+.stage.babyNames .pointedTitle span {
+  display: inline-block;
+  position: relative;
+}
+.stage.babyNames .pointedTitle span:before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  margin-left: -6px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 12px 12.5px 0 12.5px;
+  border-color: #cd2e28 transparent transparent transparent;
+}
+.main-search .recomendado .buy-btn {
+  font-size: 1em;
+}
+@media screen and (max-width: 768px) {
+  .stage.babyNames .container {
+    overflow: hidden;
+  }
+  .stage.babyNames .babyNamesTitle {
+    margin-top: 0;
+    font-size: 2em;
+    line-height: 1.3em;
+    padding: 25px 0 20px;
+    margin-bottom: 30px;
+  }
+  .stage.babyNames .main-search {
+    width: 100%!important;
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .stage.babyNames .main-search .search-text strong {
+    margin: 20px 0 15px;
+  }
+  .stage.babyNames .main-search .search-text .fields-search .radio-container label {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .stage.babyNames .main-search .search-text .fields-search .radio-container span {
+    margin-right: 4px;
+  }
+  .stage.babyNames .main-search .search-link {
+    margin-top: 10px;
+  }
+  .stage.babyNames .main-search .search-link p {
+    font-family: "omnes_huggiesmedium";
+  }
+  .stage.babyNames .main-search .search-link .searchBtn {
+    display: inline-block;
+    width: 92%;
+    background: url(../../content/images/tools/babyNames/search_btn.png) no-repeat top left;
+    background-size: 100%;
+    margin: 15px 4%;
+    height: 65px;
+    max-width: 387px;
+  }
+  .stage.babyNames .nameSearch {
+    padding-bottom: 45px;
+    border-bottom: none;
+  }
+  .stage.babyNames .nameSearch .searchImg {
+    width: 120%;
+    margin: 0px 5% 10px -8%;
+  }
+  .stage.babyNames .listNameLogin {
+    display: inline-block;
+    width: 100%;
+    margin: 30px 0;
+    padding: 70px 35px 35px 35px;
+    text-align: center;
+  }
+  .stage.babyNames .listNameLogin:before {
+    content: ' ';
+    position: absolute;
+    display: inline-block;
+    top: -45px;
+    left: 50%;
+    margin-left: -45px;
+  }
+  .stage.babyNames .listNameLogin h3 {
+    font-size: 1.8em;
+  }
+  .stage.babyNames .listNameLogin p {
+    font-size: 1.4em;
+    line-height: 1.2em;
+  }
+  .stage.babyNames .popularNames {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .stage.babyNames .popularNames .double-row .pointedTitle {
+    width: 100%;
+    min-width: auto;
+  }
+  .stage.babyNames .popularNames .listContainer-data {
+    width: 100%;
+    min-width: auto;
+  }
+  .stage.babyNames .popularNames .listContainer-data .list {
+    margin-bottom: 0;
+  }
+  .stage.babyNames .popularNames .listContainer {
+    text-align: center;
+    min-width: inherit;
+    width: 100%;
+  }
+  .stage.babyNames .popularNames .listContainer .list {
+    width: 47%;
+    margin-top: 55px;
+    margin-bottom: 20px;
+  }
+  .stage.babyNames .topicNames {
+    width: 100%;
+  }
+  .stage.babyNames .topicNames .double-row .pointedTitle {
+    width: 100%;
+    min-width: auto;
+  }
+  .stage.babyNames .topicNames .listContainer-data {
+    width: 95%;
+    min-width: auto;
+  }
+  .stage.babyNames .topicNames .listContainer-data .list ul li {
+    min-height: 270px;
+  }
+  .stage.babyNames .topicNames .listContainer {
+    padding: 0 2%;
+    min-width: inherit;
+    width: 100%;
+    margin: 0;
+  }
+  .stage.babyNames .topicNames .listContainer .list {
+    margin: 0;
+  }
+  .stage.babyNames .topicNames .listContainer .list div {
+    min-height: inherit;
+    width: 100%;
+  }
+  .stage.babyNames .topicNames .listContainer .redText {
+    margin-top: 55px;
+  }
+  .stage.listaNombres .main-container .content-wrap .combine {
+    width: 90%;
+  }
+  .slick-dots {
+    text-align: center;
+  }
+  .slick-dots li {
+    float: inherit;
+  }
+  .slick-dots li button {
+    background: #bababa;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    border-radius: 100%;
+  }
+  .slick-dots li.slick-active button {
+    background: #cd2e28;
+  }
+}
+@media screen and (max-width: 450px) {
+  .stage.babyNames .topicNames .listContainer-data .list ul li {
+    min-height: 160px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .stage.babyNames .topicNames .listContainer .list div {
+    max-width: 200px;
+  }
+}
+.stage.nombreDetalle .m-scene .header-detail .container {
+  position: relative;
+  left: -20px;
+}
+.stage.nombreDetalle .m-page .container .wrapper-articles {
+  border-right: 1px dashed #e1e1e1;
+  margin-bottom: 100px;
+  margin-top: 20px;
+}
+.stage.nombreDetalle .m-page .container .wrapper-articles .baby-names-detail {
+  padding-right: 50px;
+}
+.stage.nombreDetalle .m-page .container .wrapper-articles .baby-names-detail p {
+  color: #333740;
+  font-size: 18px;
+}
+.stage.nombreDetalle .m-page .container .wrapper-articles .baby-names-detail p strong {
+  color: #cd2e28;
+  font-family: "omnes_huggiessemibold";
+}
+.stage.nombreDetalle .m-page .container .wrapper-articles .baby-names-detail p a {
+  color: #cd2e28;
+  text-decoration: underline;
+  font-family: "omnes_huggiesmedium";
+}
+.stage.nombreDetalle .m-page .container .wrapper-articles .baby-names-detail .redText {
+  font-family: "omnes_huggiesbold";
+  font-size: 50px;
+  display: inline-block;
+  width: 100%;
+  margin-top: 5px;
+}
+.stage.nombreDetalle .m-page .container .wrapper-articles .baby-names-detail .nameData,
+.stage.nombreDetalle .m-page .container .wrapper-articles .baby-names-detail .addListComp {
+  margin-top: 15px;
+  display: block;
+  float: left;
+}
+.stage.nombreDetalle .m-page .container .wrapper-articles .baby-names-detail .nameData {
+  width: 55%;
+  margin-right: 5%;
+}
+.stage.nombreDetalle .m-page .container .wrapper-articles .baby-names-detail .nameData p {
+  margin: 0;
+}
+.stage.nombreDetalle .m-page .container .wrapper-articles .baby-names-detail .nameData a {
+  text-decoration: none;
+}
+.stage.nombreDetalle .m-page .container .wrapper-articles .baby-names-detail .addListComp {
+  width: 40%;
+  height: 69px;
+  margin-bottom: 30px;
+}
+.stage.nombreDetalle .m-page .container .wrapper-articles .baby-names-detail .addListComp a {
+  display: block;
+  position: relative;
+  height: 50px;
+}
+.stage.nombreDetalle .m-page .container .wrapper-articles .baby-names-detail .addListComp a > span {
+  display: block;
+  height: 34px;
+  margin: 8px 0;
+  background: url(../../content/images/tools/babyNames/add_icn.png) no-repeat top left;
+  float: left;
+  width: 37px;
+}
+.stage.nombreDetalle .m-page .container .wrapper-articles .baby-names-detail .addListComp.fav {
+  pointer-events: none;
+}
+.stage.nombreDetalle .m-page .container .wrapper-articles .baby-names-detail .addListComp.fav a span {
+  background: url(../../content/images/tools/babyNames/added_icn.png) no-repeat top left;
+}
+.stage.nombreDetalle .m-page .container .wrapper-articles .baby-names-detail .addListComp p {
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  border-radius: 15px;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translate(0, -50%);
+  /* IE 9 */
+  -webkit-transform: translate(0, -50%);
+  /* IE 9 */
+  transform: translate(0, -50%);
+  /* IE 9 */
+  left: 60px;
+  background: #f0f0f0;
+  padding: 15px;
+  font-family: "omnes_huggiesmedium";
+}
+.stage.nombreDetalle .m-page .container .wrapper-articles .baby-names-detail .addListComp p::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8px 9px 8px 0;
+  border-color: transparent #f0f0f0 transparent transparent;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translate(0, -50%);
+  /* IE 9 */
+  -webkit-transform: translate(0, -50%);
+  /* IE 9 */
+  transform: translate(0, -50%);
+  /* IE 9 */
+  left: -9px;
+}
+.stage.nombreDetalle .m-page .container .wrapper-articles .baby-names-detail .description {
+  clear: both;
+}
+.stage.nombreDetalle .m-page .container .wrapper-articles .compartir {
+  background: #f0f0f0;
+  border: 1px dashed #d4dbe4;
+  margin-top: 38px;
+  width: 53%;
+  display: block;
+  position: relative;
+  height: 75px;
+  margin-bottom: 70px;
+  margin-left: -20%;
+  padding-left: 20%;
+}
+.stage.nombreDetalle .m-page .container .wrapper-articles .compartir p {
+  font-family: "omnes_huggiesmedium";
+  font-size: 20px;
+  color: #333740;
+  display: inline-block;
+  margin: 0 15px 0 0;
+}
+.stage.nombreDetalle .m-page .container .wrapper-articles .compartir .fb_icn {
+  background: url(../../content/images/tools/babyNames/facebook.png) no-repeat top left;
+  display: inline-block;
+  width: 46px;
+  height: 46px;
+  position: relative;
+  top: 16px;
+}
+.stage.nombreDetalle .m-page .container .wrapper-articles .compartir .share-view {
+  display: inline-block;
+}
+.stage.nombreDetalle .m-page .container .wrapper-articles .pointedTitle {
+  background: #cd2e28;
+  color: white;
+  margin-left: -20%;
+  padding-left: 20%;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: relative;
+  line-height: 34px;
+}
+.stage.nombreDetalle .m-page .container .wrapper-articles .pointedTitle.boys {
+  background: #1e8cd8;
+}
+.stage.nombreDetalle .m-page .container .wrapper-articles .pointedTitle.boys::after {
+  border-color: #1e8cd8 transparent transparent transparent;
+}
+.stage.nombreDetalle .m-page .container .wrapper-articles .pointedTitle.girls {
+  background: #e8298c;
+}
+.stage.nombreDetalle .m-page .container .wrapper-articles .pointedTitle.girls::after {
+  border-color: #e8298c transparent transparent transparent;
+}
+.stage.nombreDetalle .m-page .container .wrapper-articles .pointedTitle::after {
+  content: "";
+  display: inline-block;
+  width: 0px;
+  height: 0;
+  border-style: solid;
+  border-width: 15px 15px 0 15px;
+  border-color: #cd2e28 transparent transparent transparent;
+  position: absolute;
+  bottom: -11px;
+  left: 20%;
+}
+.stage.nombreDetalle .m-page .container .wrapper-articles .hero-image {
+  margin-left: -17%;
+  width: 117%;
+  margin-top: -25px;
+  position: relative;
+  display: block;
+}
+.stage.nombreDetalle .m-page .container .wrapper-articles .subjectName {
+  margin-bottom: 40px;
+  margin-top: 30px;
+}
+.stage.nombreDetalle .m-page .container .wrapper-articles .subjectName img {
+  float: left;
+  width: 23%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+  -moz-box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='@color')";
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='@color');
+}
+.stage.nombreDetalle .m-page .container .wrapper-articles .subjectName .description {
+  float: left;
+  width: 75%;
+  padding-left: 3%;
+  color: #333740;
+}
+.stage.nombreDetalle .m-page .container .wrapper-articles .subjectName .description h2 {
+  font-size: 32px;
+  font-family: "omnes_huggiessemibold";
+  margin-top: 0;
+}
+.stage.nombreDetalle .m-page .container .wrapper-articles .subjectName .description p {
+  font-family: "omnes_huggieslight";
+  font-size: 18px;
+}
+.stage.nombreDetalle .m-page .container .wrapper-articles .subjectName.list-names {
+  padding-left: 13%;
+  margin-left: 2%;
+  margin-bottom: 70px;
+}
+.stage.nombreDetalle .m-page .container .wrapper-articles .subjectName.list-names img {
+  width: inherit;
+  width: 95px;
+}
+.stage.nombreDetalle .m-page .container .wrapper-articles .subject-grid {
+  width: 95%;
+  text-align: center;
+}
+.stage.nombreDetalle .m-page .container .wrapper-articles .subject-grid .item {
+  width: 27%;
+  margin: 10px 3%;
+  display: inline-block;
+}
+.stage.nombreDetalle .m-page .container .wrapper-articles .subject-grid .item img {
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+  -moz-box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='@color')";
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='@color');
+  border: 3px solid white;
+}
+.stage.nombreDetalle .m-page .container .wrapper-articles .subject-grid .item h3 {
+  text-align: center;
+  font-family: "omnes_huggiesmedium";
+  font-size: 22px;
+  color: #333740;
+  margin-top: 14px;
+}
+.stage.nombreDetalle .m-page .container .wrapper-articles .seeMore {
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 55px;
+  padding-right: 0;
+  margin-right: 10%;
+}
+.stage.nombreDetalle .m-page .container .wrapper-articles .seeMore a {
+  position: relative;
+  padding-right: 50px;
+}
+.stage.nombreDetalle .m-page .container .wrapper-articles .resultStats {
+  position: relative;
+  margin-bottom: 20px;
+}
+.stage.nombreDetalle .m-page .container .wrapper-articles .resultStats .result-img {
+  display: inline-block;
+  vertical-align: middle;
+}
+.stage.nombreDetalle .m-page .container .wrapper-articles .resultStats .result-img img {
+  width: 97px;
+  margin-right: 20px;
+}
+.stage.nombreDetalle .m-page .container .wrapper-articles .resultStats .result-text {
+  display: inline-block;
+  vertical-align: middle;
+  width: 71%;
+}
+.stage.nombreDetalle .m-page .container .wrapper-articles .resultStats .result-text p {
+  font-size: 18px;
+}
+.stage.nombreDetalle .m-page .container .wrapper-articles .resultStats .result-text p a {
+  font-family: "omnes_huggiesmedium";
+  text-decoration: underline;
+  color: #cd2e28;
+}
+.stage.nombreDetalle .m-page .container .sidebar {
+  padding-left: 3%;
+}
+.stage.nombreDetalle .m-page .container .sidebar .nameList .listContainer-data {
+  margin: 0 auto;
+}
+.stage.nombreDetalle .m-page .container .sidebar .separator {
+  margin-top: 42px;
+  margin-bottom: 40px;
+  border-top: 1px dashed #e1e1e1;
+}
+.stage.nombreDetalle .m-page .container .sidebar .recomendado {
+  min-height: 300px;
+}
+.stage.nombreDetalle .m-page .container .sidebar .recomendado h3.title-arrow-left {
+  font-size: 18px;
+}
+@media screen and (max-width: 768px) {
+  .stage.nombreDetalle .m-page .container {
+    overflow: hidden;
+  }
+  .stage.nombreDetalle .m-page .container .wrapper-articles {
+    border-right: none;
+    margin-bottom: 50px;
+  }
+  .stage.nombreDetalle .m-page .container .wrapper-articles .baby-names-detail {
+    padding-right: 0;
+  }
+  .stage.nombreDetalle .m-page .container .wrapper-articles .compartir {
+    margin-left: 0;
+    padding-left: 0;
+    width: 109%;
+    margin: 0 -15px 80px;
+    margin-left: -5%;
+    padding-left: 10%;
+    margin-top: 40px;
+  }
+  .stage.nombreDetalle .m-page .container .wrapper-articles .seeMore {
+    width: 100%;
+    padding-right: 32px;
+    margin-right: 0;
+  }
+  .stage.nombreDetalle .m-page .container .wrapper-articles .subjectName img {
+    display: block;
+    float: none;
+    margin: 0 auto;
+    width: 55%;
+    margin-top: 30px;
+  }
+  .stage.nombreDetalle .m-page .container .wrapper-articles .subjectName .description {
+    text-align: center;
+    width: 100%;
+    display: block;
+  }
+  .stage.nombreDetalle .m-page .container .wrapper-articles .subjectName.list-names {
+    padding: 0;
+    margin-left: 9%;
+    width: 80%;
+    margin-bottom: 0;
+  }
+  .stage.nombreDetalle .m-page .container .wrapper-articles .subjectName.list-names img {
+    width: 25%;
+    float: none;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 10px;
+  }
+  .stage.nombreDetalle .m-page .container .wrapper-articles .subjectName.list-names .description {
+    width: 71%;
+    float: none;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .stage.nombreDetalle .m-page .container .wrapper-articles .subjectName.list-names .description p {
+    text-align: left;
+  }
+  .stage.nombreDetalle .m-page .container .wrapper-articles .subject-grid {
+    width: 100%;
+  }
+  .stage.nombreDetalle .m-page .container .wrapper-articles .subject-grid .item {
+    width: 42%;
+    margin: 10px 3%;
+  }
+  .stage.nombreDetalle .m-page .container .wrapper-articles .pointedTitle {
+    margin-left: 0;
+    padding-left: 0;
+    text-align: center;
+    margin: 0 -15px;
+  }
+  .stage.nombreDetalle .m-page .container .wrapper-articles .hero-image {
+    margin-top: 0;
+    margin-left: -5%;
+    height: inherit;
+  }
+  .stage.nombreDetalle .m-page .container .wrapper-articles .baby-names-detail .nameData,
+  .stage.nombreDetalle .m-page .container .wrapper-articles .baby-names-detail .addListComp {
+    width: 100%;
+  }
+  .stage.nombreDetalle .m-page .container .wrapper-articles .baby-names-detail .nameData p a {
+    text-decoration: underline;
+  }
+  .stage.nombreDetalle .m-page .container .wrapper-articles .baby-names-detail .addListComp {
+    margin-bottom: 20px;
+    margin-top: 24px;
+    height: 54px;
+  }
+  .stage.nombreDetalle .m-page .container .wrapper-articles .listContainer-data {
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  .stage.nombreDetalle .m-page .container .wrapper-articles .listContainer-data ul li {
+    padding: 15px 15px 15px 20px;
+  }
+  .sidebar .recomendado {
+    display: none;
+  }
+}
+@media screen and (max-width: 450px) {
+  .stage.nombreDetalle .m-scene .header-detail .container {
+    left: 0;
+  }
+  .stage.nombreDetalle .m-page .container .wrapper-articles {
+    margin-top: 0;
+  }
+  .stage.nombreDetalle .m-page .container .wrapper-articles .seeMore {
+    padding-right: 0;
+  }
+  .stage.nombreDetalle .m-page .container .wrapper-articles .listContainer-data .list ul li a {
+    right: 15px!important;
+  }
+  .stage.nombreDetalle .m-page .container .wrapper-articles .resultStats {
+    margin-top: 20px;
+  }
+  .stage.nombreDetalle .m-page .container .wrapper-articles .resultStats .result-img img {
+    margin: 0;
+  }
+  .stage.nombreDetalle .m-page .container .wrapper-articles .resultStats .result-text {
+    width: 100%;
+  }
+}
+.stage.listaNombres .main-container .red-bar {
+  background-color: #cd2e28;
+  color: white;
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-size: 24px;
+  font-family: "omnes_huggieslight";
+  position: relative;
+  margin-bottom: 0;
+  z-index: 2;
+}
+.stage.listaNombres .main-container .red-bar span {
+  vertical-align: middle;
+}
+.stage.listaNombres .main-container .red-bar span.desktop {
+  vertical-align: baseline;
+}
+.stage.listaNombres .main-container .red-bar.down-arrow:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 12px 12.5px 0 12.5px;
+  border-color: #cd2e28 transparent transparent transparent;
+  -webkit-transform: rotate(360deg);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -12px;
+  margin: 0 auto;
+}
+.stage.listaNombres .main-container .red-bar .list-icon {
+  background: url(../../content/images/tools/babyNames/list_icn_small.png) no-repeat top left;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  display: inline-block;
+}
+.stage.listaNombres .main-container a.edit-icon,
+.stage.listaNombres .main-container a.edit-icon-post {
+  background: url(../../content/images/tools/babyNames/edit_icn.png) no-repeat top left;
+  height: 42px;
+  width: 42px;
+  display: inline-block;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.stage.listaNombres .main-container .herolist {
+  background: url(../../content/images/tools/babyNames/baby-pattern.png) #f0f0f0 repeat top center;
+  min-height: 237px;
+  padding: 20px 0;
+  overflow: inherit;
+}
+.stage.listaNombres .main-container .herolist .container {
+  text-align: center;
+  position: relative;
+}
+.stage.listaNombres .main-container .herolist .container .icon-container {
+  vertical-align: middle;
+  position: relative;
+  display: inline-block;
+}
+.stage.listaNombres .main-container .herolist .container .icon-container figure {
+  overflow: hidden;
+  vertical-align: middle;
+  position: relative;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+  -moz-box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='@color')";
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='@color');
+  height: 177px;
+  width: 177px;
+  display: inline-block;
+  background-color: white;
+  border: 1px dashed #dde2e9;
+  margin: 0 43px;
+}
+.stage.listaNombres .main-container .herolist .container .icon-container figure figcaption {
+  background: url(../../content/images/tools/babyNames/placeholder_img.jpg) no-repeat;
+  background-position: 50% 17%;
+  display: inline-block;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+  border: 1px dashed #dde2e9;
+  width: 95%;
+  height: 95%;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translate(0, -50%);
+  /* IE 9 */
+  -webkit-transform: translate(0, -50%);
+  /* IE 9 */
+  transform: translate(0, -50%);
+  /* IE 9 */
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 70px 29px 31px;
+  font-size: 15px;
+  font-family: "omnes_huggiesregular";
+  color: #333740;
+  line-height: 15px;
+}
+.stage.listaNombres .main-container .herolist .container .icon-container figure img {
+  position: relative;
+}
+.stage.listaNombres .main-container .herolist .container .icon-container .edit-icon,
+.stage.listaNombres .main-container .herolist .container .icon-container .edit-icon-post {
+  position: absolute;
+  bottom: -19px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.stage.listaNombres .main-container .herolist .container .icon-container .icon-outer {
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+  -moz-box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='@color')";
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='@color');
+  background: #fff;
+  border: 1px dashed #dde2e9;
+  display: block;
+  height: 180px;
+  position: relative;
+  width: 180px;
+}
+.stage.listaNombres .main-container .herolist .container .icon-container .icon-outer .icon-message,
+.stage.listaNombres .main-container .herolist .container .icon-container .icon-outer .icon-image {
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+  height: 166px;
+  margin: 7px;
+  position: absolute;
+  text-align: center;
+  width: 166px;
+}
+.stage.listaNombres .main-container .herolist .container .icon-container .icon-outer .icon-message {
+  border: 1px dashed #dde2e9;
+  color: #333740;
+  font-size: 15px;
+  line-height: 16px;
+  padding: 0 15%;
+}
+.stage.listaNombres .main-container .herolist .container .icon-container .icon-outer .icon-message span {
+  background: url(../../content/images/tools/babyNames/placeholder_img.jpg) no-repeat;
+  display: block;
+  height: 37px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  margin: 20px auto 10px;
+  position: relative;
+  width: 44px;
+}
+.stage.listaNombres .main-container .herolist .container .icon-container .icon-outer .icon-image {
+  overflow: hidden;
+}
+.stage.listaNombres .main-container .herolist .container .icon-container .icon-outer .icon-image img {
+  width: 100%;
+  height: 100%;
+}
+.stage.listaNombres .main-container .herolist .container .icon-container .icon-outer .icon-edit {
+  background: url(../../content/images/tools/babyNames/edit_icn.png) no-repeat top left;
+  display: inline-block;
+  height: 42px;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  width: 42px;
+  bottom: -19px;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+}
+.stage.listaNombres .main-container .herolist .container .icon-container .icon-outer input {
+  cursor: pointer;
+  display: block;
+  height: 113%;
+  position: relative;
+  text-indent: -8970px;
+  width: 100%;
+  color: transparent;
+  border: none;
+}
+.stage.listaNombres .main-container .herolist .container .names {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 43px;
+  width: 418px;
+}
+.stage.listaNombres .main-container .herolist .container .names a {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.stage.listaNombres .main-container .herolist .container .names > div {
+  font-family: "omnes_huggiesregular";
+  color: #333740;
+  font-size: 18px;
+  vertical-align: middle;
+  display: inline-block;
+  width: 85%;
+  text-align: left;
+}
+.stage.listaNombres .main-container .herolist .container .names > div p {
+  position: relative;
+  margin-top: 6px;
+  margin: 0;
+}
+.stage.listaNombres .main-container .herolist .container .names > div p strong {
+  font-family: "omnes_huggiessemibold";
+  font-size: 18px;
+}
+.stage.listaNombres .main-container .herolist .container .names .edit-icon-post {
+  display: block;
+  margin-left: -60px;
+  margin-top: 5px;
+  position: absolute;
+}
+.stage.listaNombres .main-container .herolist .container .parent-names {
+  opacity: 0;
+  width: 702px;
+  min-height: 249px;
+  background-color: white;
+  border: 1px dashed #dde2e9;
+  padding-top: 50px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  position: absolute;
+  top: -66px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: -1;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -moz-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='@color')";
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='@color');
+}
+.stage.listaNombres .main-container .herolist .container .parent-names .input-row {
+  margin-bottom: 15px;
+}
+.stage.listaNombres .main-container .herolist .container .parent-names .button-row {
+  margin-top: 25px;
+  text-align: left;
+  padding-left: 115px;
+  clear: both;
+}
+.stage.listaNombres .main-container .herolist .container .parent-names label {
+  display: inline-block;
+  font-family: "omnes_huggiessemibold";
+  color: #333740;
+  width: 65px;
+  text-align: right;
+  font-size: 20px;
+}
+.stage.listaNombres .main-container .herolist .container .parent-names input[type="text"],
+.stage.listaNombres .main-container .herolist .container .parent-names textarea {
+  background-color: #efefef;
+  margin: 0 10px;
+  height: 39px;
+  width: 257px;
+  line-height: 39px;
+}
+.stage.listaNombres .main-container .herolist .container .parent-names textarea {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+  border: none;
+  height: 75px;
+  line-height: inherit;
+  padding: 20px;
+  resize: none;
+  width: 68%;
+}
+.stage.listaNombres .main-container .herolist .container .parent-names button {
+  font-family: "omnes_huggieslight";
+}
+.stage.listaNombres .main-container .herolist .container .parent-names button.red {
+  font-family: "omnes_huggiessemibold";
+}
+.stage.listaNombres .main-container .herolist .container .parent-names .btn.close {
+  float: none;
+  margin-left: 10px;
+  opacity: 1;
+  padding: 0 20px;
+}
+.stage.listaNombres .main-container .herolist .container .parent-names.open {
+  opacity: 1;
+  top: -41px;
+  z-index: 0;
+}
+.stage.listaNombres .main-container .herolist.compartida {
+  border-top: 6px solid #f0f0f0;
+  padding: 20px 0 9px;
+}
+.stage.listaNombres .main-container .herolist.compartida .container .icon-container {
+  width: 100%;
+}
+.stage.listaNombres .main-container .herolist.compartida .container .icon-container .huggies-icn {
+  background: url(../../content/images/tools/babyNames/huggies_icn.png) repeat top center;
+  display: inline-block;
+  position: absolute;
+  bottom: -19px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 67px;
+  height: 40px;
+}
+.stage.listaNombres .main-container .herolist.compartida .container .names {
+  margin-top: 20px;
+  width: 588px;
+}
+.stage.listaNombres .main-container .herolist.compartida .container .names div {
+  text-align: center;
+}
+.stage.listaNombres .main-container .herolist.compartida .container .favorites {
+  text-align: center;
+  margin-top: 10px;
+}
+.stage.listaNombres .main-container .herolist.compartida .container .favorites li {
+  display: inline-block;
+  float: none;
+  margin: 0 20px;
+}
+.stage.listaNombres .main-container .herolist.compartida .container .favorites li a {
+  font-size: 36px;
+  font-family: "omnes_huggiessemibold";
+}
+.stage.listaNombres .main-container .herolist.compartida .container .favorites li a:first-child:before {
+  content: "·";
+  display: inline-block;
+}
+.stage.listaNombres .main-container .content-wrap .combine {
+  background-color: #f6f6f6;
+  width: 796px;
+  display: block;
+  margin: 0 auto;
+  border: 1px dashed #dde2e9;
+  padding: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  -moz-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='@color')";
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='@color');
+}
+.stage.listaNombres .main-container .content-wrap .combine .table-names .listContainer-data {
+  margin: 0 auto;
+}
+.stage.listaNombres .main-container .content-wrap .combine .table-names .listContainer-data.add-names {
+  display: none;
+}
+.stage.listaNombres .main-container .content-wrap .combine h3 {
+  text-align: center;
+  font-size: 22px;
+  font-family: "omnes_huggiesmedium";
+  color: #333740;
+}
+.stage.listaNombres .main-container .content-wrap .combine.no-bg {
+  background-color: white;
+  border: none;
+  -moz-box-shadow: 0px 0px 0px transparent;
+  -webkit-box-shadow: 0px 0px 0px transparent;
+  box-shadow: 0px 0px 0px transparent;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='@color')";
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='@color');
+  margin-top: 6px;
+}
+.stage.listaNombres .main-container .content-wrap .combine .sort-info {
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+}
+.stage.listaNombres .main-container .content-wrap .combine .sort-info p {
+  font-family: "omnes_huggieslight";
+  font-size: 18px;
+}
+.stage.listaNombres .main-container .content-wrap .combine .sort-info p .mixer {
+  background: url(../../content/images/tools/babyNames/icons_sprite.png) no-repeat bottom left;
+  height: 42px;
+  width: 42px;
+  display: inline-block;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  top: 5px;
+}
+.stage.listaNombres .main-container .content-wrap .combine .sort-info p .trophy {
+  background: url(../../content/images/tools/babyNames/icons_sprite.png) no-repeat top left;
+  height: 33px;
+  width: 33px;
+  display: inline-block;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  top: 5px;
+}
+.stage.listaNombres .main-container .content-wrap .combine .sort-info .group {
+  margin-top: 25px;
+}
+.stage.listaNombres .main-container .content-wrap .combine .sort-info .group .mi-lista {
+  float: left;
+  font-family: "omnes_huggieslight";
+  font-size: 18px;
+  margin-bottom: 10px;
+  position: relative;
+  top: -13px;
+}
+.stage.listaNombres .main-container .content-wrap .combine .sort-info .group .mi-lista .number {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  border-radius: 25px;
+  background: #e2e2e2;
+  text-align: center;
+  line-height: 50px;
+  font-family: "omnes_huggiesmedium";
+  font-size: 26px;
+}
+.stage.listaNombres .main-container .content-wrap .combine .sort-info .group .btn {
+  background: #333740;
+  color: white;
+  float: right;
+}
+.stage.listaNombres .main-container .content-wrap .combine .button-row {
+  text-align: center;
+  margin-top: 50px;
+}
+.stage.listaNombres .main-container .content-wrap .combine .combine-info {
+  display: none;
+  background: white;
+  width: 90%;
+  -moz-box-shadow: 2px 2px 18px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 2px 2px 18px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 18px rgba(0, 0, 0, 0.1);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='@color')";
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='@color');
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 20px;
+  border: 1px dashed #d4dbe4;
+  padding: 30px 0;
+}
+.stage.listaNombres .main-container .content-wrap .combine .combine-info .button-row {
+  text-align: center;
+  clear: both;
+}
+.stage.listaNombres .main-container .content-wrap .combine .combine-info .drag-content .instructions {
+  margin: 12px 0 29px;
+}
+.stage.listaNombres .main-container .content-wrap .combine .combine-info .drag-content .instructions img {
+  width: 77px;
+}
+.stage.listaNombres .main-container .content-wrap .combine .combine-info .drag-content .instructions p {
+  font-family: "omnes_huggieslight";
+  font-size: 20px;
+  margin: 20px;
+}
+.stage.listaNombres .main-container .content-wrap .combine .combine-info .drag-content .actions {
+  display: none;
+}
+.stage.listaNombres .main-container .content-wrap .combine .combine-info .drag-content .switch {
+  background: url(../../content/images/tools/babyNames/switch_btn.png) no-repeat top left;
+  width: 44px;
+  height: 37px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.stage.listaNombres .main-container .content-wrap .combine .combine-info .drag-content .name {
+  font-family: "omnes_huggieslight";
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+.stage.listaNombres .main-container .content-wrap .combine .combine-info .drag-content .name .cancel {
+  background: black;
+  color: white;
+  width: 31px;
+  height: 31px;
+  display: inline-block;
+  line-height: 28px;
+  text-align: center;
+  font-family: "omnes_huggiessemibold";
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+  font-size: 20px;
+  vertical-align: middle;
+  margin: 0 5px;
+}
+.stage.listaNombres .main-container .content-wrap .combine .combine-info .drag-content .name span {
+  vertical-align: middle;
+  display: inline-block;
+}
+.stage.listaNombres .main-container .content-wrap .combine .combine-info .drag-content .name span:not(.cancel) {
+  min-width: 60px;
+  min-height: 35px;
+  text-align: left;
+}
+.stage.listaNombres .main-container .content-wrap .combine .combine-info .drag-content .name a {
+  display: inline-block;
+  border: 2px dashed transparent;
+  padding-bottom: 5px;
+}
+.stage.listaNombres .main-container .content-wrap .combine .combine-info .drag-content .name a.drag {
+  border: 2px dashed #a2a2a2;
+}
+.stage.listaNombres .main-container .content-wrap .combine .combine-info .drag-content .name > div {
+  display: inline-block;
+}
+.stage.listaNombres .main-container .content-wrap .combine .mix-names {
+  margin-bottom: 25px;
+  text-align: center;
+}
+.stage.listaNombres .main-container .content-wrap .combine .mix-names .btn {
+  display: none;
+  color: #333740;
+  background: #e2e3e3;
+}
+.stage.listaNombres .main-container .content-wrap .combine .mix-names .btn .close-combine {
+  font-family: "omnes_huggiessemibold";
+  font-size: 30px;
+  margin-right: 6px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -8%;
+}
+.stage.listaNombres .main-container .content-wrap .combine .empty-names {
+  margin-bottom: 60px;
+}
+.stage.listaNombres .main-container .content-wrap .combine .empty-names .alert {
+  background: #cd2e28;
+  text-align: center;
+  color: white;
+  position: relative;
+  font-size: 24px;
+  font-family: "omnes_huggiesmedium";
+  line-height: 27px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+.stage.listaNombres .main-container .content-wrap .combine .empty-names .alert:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 12px 12.5px 0 12.5px;
+  border-color: #cd2e28 transparent transparent transparent;
+  -webkit-transform: rotate(360deg);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -12px;
+  margin: 0 auto;
+}
+.stage.listaNombres .main-container .content-wrap .combine .empty-names .searchBtn {
+  display: inline-block;
+  width: 92%;
+  background: url(../../content/images/tools/babyNames/search_btn.png) no-repeat top left;
+  background-size: 100%;
+  margin: 15px 4%;
+  height: 65px;
+  max-width: 387px;
+}
+.stage.listaNombres .main-container .content-wrap .combine .empty-names .search-text {
+  width: 340px;
+  margin: 0 auto;
+  margin-top: 35px;
+}
+.stage.listaNombres .main-container .content-wrap .combine .empty-names .search-text strong {
+  display: none;
+}
+.stage.listaNombres .main-container .content-wrap .product-grid {
+  margin-top: 70px;
+}
+.stage.listaNombres .main-container .content-wrap .compartir {
+  background: #f0f0f0;
+  border: 1px dashed #d4dbe4;
+  width: 100%;
+  display: block;
+  position: relative;
+  height: 75px;
+  margin-bottom: 20px;
+}
+.stage.listaNombres .main-container .content-wrap .compartir .share-view {
+  display: inline-block;
+}
+.stage.listaNombres .main-container .content-wrap .compartir .container {
+  width: 504px!important;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 75px;
+}
+.stage.listaNombres .main-container .content-wrap .compartir .container p {
+  font-family: omnes_huggiesmedium;
+  font-size: 20px;
+  color: #333740;
+  display: inline-block;
+  margin: 0 15px 0 0;
+}
+.stage.listaNombres .main-container .content-wrap .compartir .container .fb_icn {
+  background: url(../../content/images/tools/babyNames/facebook.png) no-repeat top left;
+  display: inline-block;
+  width: 46px;
+  height: 46px;
+  position: relative;
+  top: 16px;
+}
+@media screen and (max-width: 768px) {
+  .stage.listaNombres {
+    padding-bottom: 75px;
+  }
+  .stage.listaNombres .main-container .content-wrap .combine {
+    width: 90%;
+    margin-bottom: 0;
+  }
+  .stage.listaNombres .main-container .content-wrap .combine .sort-info .group a {
+    float: none!important;
+  }
+  .stage.listaNombres .main-container .content-wrap .combine .sort-info .group .mi-lista {
+    display: none;
+  }
+  .stage.listaNombres .main-container .content-wrap .combine .sort-info p .trophy {
+    display: block;
+    margin: 0 auto;
+  }
+  .stage.listaNombres .main-container .content-wrap .combine .table-names .listContainer-data {
+    width: 100%;
+  }
+  .stage.listaNombres .main-container .content-wrap .combine .combine-info {
+    width: 100%;
+  }
+  .stage.listaNombres .main-container .content-wrap .combine .mix-names .btn {
+    font-size: 19px;
+  }
+  .stage.listaNombres .main-container .content-wrap .compartir {
+    bottom: 0;
+    margin-bottom: 0;
+    position: fixed;
+  }
+  .stage.listaNombres .main-container .content-wrap .compartir .container {
+    width: 100%!important;
+  }
+  .stage.listaNombres .main-container .content-wrap .recomendado {
+    min-height: 282px;
+    width: 86%;
+    margin: 0 auto;
+    -webkit-border-radius: inherit;
+    -moz-border-radius: inherit;
+    -ms-border-radius: inherit;
+    -o-border-radius: inherit;
+    border-radius: inherit;
+    -webkit-border-bottom-right-radius: 10px;
+    -moz-border-radius-bottomright: 10px;
+    border-bottom-right-radius: 10px;
+    margin-bottom: 30px;
+  }
+  .stage.listaNombres .main-container .content-wrap .recomendado img {
+    -webkit-border-radius: inherit;
+    -moz-border-radius: inherit;
+    -ms-border-radius: inherit;
+    -o-border-radius: inherit;
+    border-radius: inherit;
+  }
+  .stage.listaNombres .main-container .content-wrap .combine-info .button-row .cancel {
+    display: none;
+  }
+  .stage.listaNombres .main-container .content-wrap .product-grid {
+    text-align: center;
+  }
+  .stage.listaNombres .main-container .red-bar.down-arrow::before {
+    margin: inherit;
+    right: 5%;
+    left: inherit;
+  }
+  .stage.listaNombres .main-container .herolist .container .names {
+    width: 100%;
+    margin: 0;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  .stage.listaNombres .main-container .herolist .container .names > div {
+    width: 74%;
+  }
+  .stage.listaNombres .main-container .herolist .container .names > div p {
+    text-align: center;
+  }
+  .stage.listaNombres .main-container .herolist .container .names .edit-icon-post {
+    margin-left: -50px;
+  }
+  .stage.listaNombres .main-container .herolist .container .parent-names {
+    width: 90%;
+    padding-bottom: 25px;
+  }
+  .stage.listaNombres .main-container .herolist .container .parent-names .input-row {
+    text-align: left;
+    margin-left: 6%;
+  }
+  .stage.listaNombres .main-container .herolist .container .parent-names label {
+    display: block;
+    text-align: left;
+    padding-left: 10px;
+  }
+  .stage.listaNombres .main-container .herolist .container .parent-names input[type="text"] {
+    width: 44%;
+    margin: 0 5px;
+  }
+  .stage.listaNombres .main-container .herolist .container .parent-names textarea {
+    height: auto;
+    width: 90%;
+  }
+  .stage.listaNombres .main-container .herolist .container .parent-names .button-row {
+    text-align: center;
+    padding-left: inherit;
+    margin-top: 35px;
+  }
+  .stage.listaNombres .main-container .herolist.compartida .container .names {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .stage.listaNombres .main-container .herolist .container .parent-names {
+    width: 100%;
+    border-right: 0;
+    border-left: 0;
+    min-height: 325px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+    border-radius: 0px;
+  }
+  .stage.listaNombres .main-container .herolist .container span {
+    width: 174px;
+    display: inline-block;
+    text-align: left;
+    line-height: 19px;
+  }
+  .stage.listaNombres .main-container .content-wrap .combine {
+    width: 100%;
+    padding: 30px 10px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+    border-radius: 0px;
+    -moz-box-shadow: 0 0 0 transparent;
+    -webkit-box-shadow: 0 0 0 transparent;
+    box-shadow: 0 0 0 transparent;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='@color')";
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='@color');
+    border-right: 0;
+    border-left: 0;
+  }
+  .stage.listaNombres .main-container .content-wrap .combine .empty-names .search-text {
+    width: inherit;
+  }
+  .stage.listaNombres .main-container .content-wrap .combine .empty-names .search-text .fields-search .radio-container {
+    display: none;
+  }
+  .stage.listaNombres .main-container .content-wrap .recomendado {
+    width: 92%;
+  }
+}
+.stage.NameChosen .main-container a.edit-icon {
+  background: url(../../content/images/tools/babyNames/edit_icn.png) no-repeat top left;
+  height: 42px;
+  width: 42px;
+  display: inline-block;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.stage.NameChosen .main-container .herochosen {
+  background: url(../../content/images/tools/babyNames/baby-pattern.png) #f0f0f0 repeat top center;
+  min-height: 237px;
+  padding: 20px 0;
+  overflow: inherit;
+}
+.stage.NameChosen .main-container .herochosen .container {
+  text-align: center;
+  position: relative;
+}
+.stage.NameChosen .main-container .herochosen .container .icon-container {
+  vertical-align: middle;
+  position: relative;
+  display: inline-block;
+}
+.stage.NameChosen .main-container .herochosen .container .icon-container figure {
+  overflow: hidden;
+  vertical-align: middle;
+  position: relative;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+  -moz-box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='@color')";
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='@color');
+  height: 177px;
+  width: 177px;
+  display: inline-block;
+  background-color: white;
+  border: 1px dashed #dde2e9;
+  margin: 0 43px;
+}
+.stage.NameChosen .main-container .herochosen .container .icon-container figure figcaption {
+  background: url(../../content/images/tools/babyNames/placeholder_img.jpg) no-repeat;
+  background-position: 50% 17%;
+  display: inline-block;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+  border: 1px dashed #dde2e9;
+  width: 95%;
+  height: 95%;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translate(0, -50%);
+  /* IE 9 */
+  -webkit-transform: translate(0, -50%);
+  /* IE 9 */
+  transform: translate(0, -50%);
+  /* IE 9 */
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 70px 29px 31px;
+  font-size: 15px;
+  font-family: "omnes_huggiesregular";
+  color: #333740;
+  line-height: 15px;
+}
+.stage.NameChosen .main-container .herochosen .container .icon-container figure img {
+  position: relative;
+}
+.stage.NameChosen .main-container .herochosen .container .icon-container .edit-icon {
+  position: absolute;
+  bottom: -19px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.stage.NameChosen .main-container .herochosen .container .icon-container .icon-outer {
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+  -moz-box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='@color')";
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='@color');
+  background: #fff;
+  border: 1px dashed #dde2e9;
+  display: block;
+  height: 180px;
+  position: relative;
+  width: 180px;
+}
+.stage.NameChosen .main-container .herochosen .container .icon-container .icon-outer .icon-message,
+.stage.NameChosen .main-container .herochosen .container .icon-container .icon-outer .icon-image {
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+  height: 166px;
+  margin: 7px;
+  position: absolute;
+  text-align: center;
+  width: 166px;
+}
+.stage.NameChosen .main-container .herochosen .container .icon-container .icon-outer .icon-message {
+  border: 1px dashed #dde2e9;
+  color: #333740;
+  font-size: 15px;
+  line-height: 16px;
+  padding: 0 15%;
+}
+.stage.NameChosen .main-container .herochosen .container .icon-container .icon-outer .icon-message span {
+  background: url(../../content/images/tools/babyNames/placeholder_img.jpg) no-repeat;
+  display: block;
+  height: 37px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  margin: 20px auto 10px;
+  position: relative;
+  width: 44px;
+}
+.stage.NameChosen .main-container .herochosen .container .icon-container .icon-outer .icon-image {
+  overflow: hidden;
+}
+.stage.NameChosen .main-container .herochosen .container .icon-container .icon-outer .icon-image img {
+  width: 100%;
+  height: 100%;
+}
+.stage.NameChosen .main-container .herochosen .container .icon-container .icon-outer .icon-edit {
+  background: url(../../content/images/tools/babyNames/edit_icn.png) no-repeat top left;
+  display: inline-block;
+  height: 42px;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  width: 42px;
+  bottom: -19px;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+}
+.stage.NameChosen .main-container .herochosen .container .icon-container .icon-outer input {
+  cursor: pointer;
+  display: block;
+  height: 113%;
+  position: relative;
+  text-indent: -8970px;
+  width: 100%;
+  color: transparent;
+  border: none;
+}
+.stage.NameChosen .main-container .herochosen .container .names {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 40px 43px 70px;
+  width: 100%;
+  text-align: center;
+}
+.stage.NameChosen .main-container .herochosen .container .names a {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.stage.NameChosen .main-container .herochosen .container .names > div {
+  font-family: "omnes_huggiesregular";
+  color: #333740;
+  font-size: 18px;
+  vertical-align: middle;
+  display: inline-block;
+  width: 85%;
+  text-align: left;
+}
+.stage.NameChosen .main-container .herochosen .container .names > div p {
+  position: relative;
+  margin-top: 6px;
+  margin: 0;
+  text-align: center;
+}
+.stage.NameChosen .main-container .herochosen .container .names > div p strong {
+  font-family: "omnes_huggiessemibold";
+  font-size: 18px;
+}
+.stage.NameChosen .main-container .herochosen .container .parent-names {
+  display: none;
+  width: 702px;
+  min-height: 249px;
+  background-color: white;
+  border: 1px dashed #dde2e9;
+  padding-top: 50px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  position: absolute;
+  top: -26px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  -moz-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='@color')";
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='@color');
+}
+.stage.NameChosen .main-container .herochosen .container .parent-names .input-row {
+  margin-bottom: 15px;
+}
+.stage.NameChosen .main-container .herochosen .container .parent-names .button-row {
+  margin-top: 25px;
+  text-align: left;
+  padding-left: 115px;
+  clear: both;
+}
+.stage.NameChosen .main-container .herochosen .container .parent-names label {
+  display: inline-block;
+  font-family: "omnes_huggiessemibold";
+  color: #333740;
+  width: 65px;
+  text-align: right;
+  font-size: 20px;
+}
+.stage.NameChosen .main-container .herochosen .container .parent-names input[type="text"] {
+  background-color: #efefef;
+  margin: 0 10px;
+  height: 39px;
+  width: 257px;
+  line-height: 39px;
+}
+.stage.NameChosen .main-container .herochosen .container .parent-names button {
+  font-family: "omnes_huggieslight";
+}
+.stage.NameChosen .main-container .herochosen .container .parent-names button.red {
+  font-family: "omnes_huggiessemibold";
+}
+.stage.NameChosen .main-container .herochosen.compartida {
+  border-top: 6px solid #f0f0f0;
+  padding: 20px 0 9px;
+}
+.stage.NameChosen .main-container .herochosen.compartida .container .icon-container {
+  width: 100%;
+}
+.stage.NameChosen .main-container .herochosen.compartida .container .icon-container .huggies-icn {
+  background: url(../../content/images/tools/babyNames/huggies_icn.png) repeat top center;
+  display: inline-block;
+  position: absolute;
+  bottom: -19px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 67px;
+  height: 40px;
+}
+.stage.NameChosen .main-container .herochosen.compartida .container .names {
+  margin-top: 20px;
+  width: 588px;
+}
+.stage.NameChosen .main-container .herochosen.compartida .container .names div {
+  text-align: center;
+}
+.stage.NameChosen .main-container .herochosen.compartida .container .favorites {
+  text-align: center;
+  margin-top: 10px;
+}
+.stage.NameChosen .main-container .herochosen.compartida .container .favorites li {
+  display: inline-block;
+  float: none;
+  margin: 0 20px;
+}
+.stage.NameChosen .main-container .herochosen.compartida .container .favorites li a {
+  font-size: 36px;
+  font-family: "omnes_huggiessemibold";
+}
+.stage.NameChosen .main-container .herochosen.compartida .container .favorites li a:first-child:before {
+  content: "·";
+  display: inline-block;
+}
+.stage.NameChosen .main-container .chosenName {
+  text-align: center;
+}
+.stage.NameChosen .main-container .alert {
+  background: #fff;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  font-size: 44px;
+  font-family: "omnes_huggieslight";
+  line-height: 47px;
+  margin-top: -55px;
+  margin-bottom: 50px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  -moz-box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='@color')";
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='@color');
+}
+.stage.NameChosen .main-container .alert:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 12px 12.5px 0 12.5px;
+  border-color: #fff transparent transparent transparent;
+  -webkit-transform: rotate(360deg);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -12px;
+  margin: 0 auto;
+}
+.stage.NameChosen .main-container .alert.boys {
+  color: #1e8cd8;
+}
+.stage.NameChosen .main-container .alert.girls {
+  color: #e8298c;
+}
+.stage.NameChosen .main-container .alert img {
+  max-width: 136px;
+}
+.stage.NameChosen .main-container .alert strong {
+  display: inline-block;
+  width: 100%;
+  margin: 20px 0;
+  font-weight: 300;
+}
+.stage.NameChosen .main-container .compartir {
+  background: #f0f0f0;
+  border: 1px dashed #d4dbe4;
+  width: 100%;
+  display: block;
+  position: relative;
+  height: 75px;
+  margin-bottom: 20px;
+}
+.stage.NameChosen .main-container .compartir .share-view {
+  display: inline-block;
+}
+.stage.NameChosen .main-container .compartir .container {
+  width: 504px!important;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 75px;
+}
+.stage.NameChosen .main-container .compartir .container p {
+  font-family: omnes_huggiesmedium;
+  font-size: 20px;
+  color: #333740;
+  display: inline-block;
+  margin: 0 15px 0 0;
+}
+.stage.NameChosen .main-container .compartir .container .fb_icn {
+  background: url(../../content/images/tools/babyNames/facebook.png) no-repeat top left;
+  display: inline-block;
+  width: 46px;
+  height: 46px;
+  position: relative;
+  top: 16px;
+}
+.stage.NameChosen .main-container .babyData {
+  text-align: center;
+}
+.stage.NameChosen .main-container .babyData p {
+  font-family: "omnes_huggieslight";
+  font-size: 18px;
+  display: inline-block;
+  width: 44%;
+  margin: 30px 5%;
+  text-align: left;
+}
+.stage.NameChosen .main-container .babyData p a {
+  color: #cd2e28;
+}
+.stage.NameChosen .main-container .babyData .dataBtn {
+  display: inline-block;
+  width: auto;
+}
+.stage.NameChosen .main-container .babyData .dataBtn a {
+  display: inline-block;
+  float: inherit;
+  width: auto;
+  margin: 30px 0;
+  text-align: left;
+  font-family: "omnes_huggiesmedium";
+  font-size: 18px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  border-radius: 25px;
+  height: 60px;
+  line-height: 60px;
+  background: #f0f0f0;
+  padding: 0 20px 0 65px;
+  position: relative;
+}
+.stage.NameChosen .main-container .babyData .dataBtn a:before {
+  content: " ";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: url(../../content/images/tools/babyNames/edit_icn.png) no-repeat top left;
+  height: 42px;
+  width: 42px;
+  display: inline-block;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.stage.NameChosen .main-container .babyData .changeName {
+  display: inline-block;
+  float: inherit;
+  width: auto;
+  margin: 30px 0 100px;
+  text-align: left;
+  font-family: "omnes_huggiesregular";
+  font-size: 20px;
+  color: #fff;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+  height: 40px;
+  line-height: 40px;
+  background: #cd2e28;
+  padding: 0 20px 0 65px;
+  position: relative;
+}
+.stage.NameChosen .main-container .babyData .changeName:before {
+  content: " ";
+  position: absolute;
+  top: 5px;
+  left: 25px;
+  background: url(../../content/images/tools/babyNames/changeNameIcn.png) no-repeat top left;
+  height: 33px;
+  width: 33px;
+  display: inline-block;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+@media screen and (max-width: 768px) {
+  .stage.NameChosen .main-container .herochosen .container .names {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 50px 2% 80px;
+  }
+  .stage.NameChosen .main-container .herochosen .container .names a {
+    float: inherit;
+    margin-top: 5px;
+  }
+  .stage.NameChosen .main-container .herochosen .container .names > div {
+    width: 80%;
+  }
+  .stage.NameChosen .main-container .compartir .container {
+    width: auto!important;
+  }
+  .stage.NameChosen .main-container .babyData {
+    padding: 0;
+  }
+  .stage.NameChosen .main-container .babyData p {
+    width: 90%;
+    margin: 30px 5%;
+    text-align: center;
+  }
+  .stage.NameChosen .main-container .babyData .dataBtn {
+    width: 100%;
+    background: #f0f0f0;
+    border: 1px dashed #d4dbe4;
+  }
+  .stage.NameChosen .main-container .babyData .dataBtn a {
+    margin: 10px 0;
+    background: #fff;
+  }
+  .stage.NameChosen .main-container .babyData .changeName {
+    margin: 30px 0 0px;
+    text-align: center;
+    font-size: 20px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+    height: 75px;
+    line-height: 20px;
+    background: #cd2e28;
+    padding: 17px 20px 0 65px;
+    position: relative;
+  }
+  .stage.NameChosen .main-container .babyData .changeName:before {
+    top: 23px;
+    left: 30px;
+  }
+}
